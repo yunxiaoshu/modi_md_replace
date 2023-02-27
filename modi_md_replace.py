@@ -5,7 +5,7 @@ import os
 import argparse
 
 #请修改下方token
-token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.xxxxxxx.wgV-HRqA'
+token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoidXNlciIsInVzZXJJZCI6Ik5EQTVORGM9Iiwic3ViIjoiOTMyNDMyNzEzQHFxLmNvbSIsImlzcyI6IjkwYjlhNjNjODFjYzYzNTg4NDg2IiwiaWF0IjoxNjc3MTYwODQzLCJhdWQiOiJtZG5pY2UtYXBpIiwiZXhwIjoxNjc5NzUyODQzLCJuYmYiOjE2NzcxNjA4NDN9.F2RdGyNM7N2NS1KoifILziPvF3yoW-WqlSzwgV-HRqA'
 #使用代理访问待转换md文档里的图床，不用的话请修改为False
 #使用代理访问待转换md文档里的图床，需要改端口请自行修改
 proxy=True
@@ -21,7 +21,7 @@ def save_url_img(url,req,proxies):
 
 #输出新的md文档
 def export_md(new_md,content):
-    with open(new_md,'w') as f:
+    with open(new_md,'w',encoding='utf-8') as f:
         for line in content:
             f.writelines(line+'\n')
         f.close()
