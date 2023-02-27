@@ -55,3 +55,5 @@ python modi_md_replace.py -f D:\eyeurl\README.md
 效果如下图所示：
 
 ![image-20230227154957346](https://testingcf.jsdelivr.net/gh/yunxiaoshu/images/image-20230227154957346.png)
+
+最后，需要注意一点，请严格将图片大小控制在1mb左右，否则将会报错：TypeError: can only concatenate str (not “NoneType“) to str，可根据报错最后输出的url去调整图片大小，修改好后再次运行该程序
