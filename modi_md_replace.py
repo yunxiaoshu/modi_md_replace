@@ -8,7 +8,7 @@ import argparse
 token='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoidXNlciIsInVzZXJJZCI6Ik5EQTVORGM9Iiwic3ViIjoiOTMyNDMyNzEzQHFxLmNvbSIsImlzcyI6IjkwYjlhNjNjODFjYzYzNTg4NDg2IiwiaWF0IjoxNjc3MTYwODQzLCJhdWQiOiJtZG5pY2UtYXBpIiwiZXhwIjoxNjc5NzUyODQzLCJuYmYiOjE2NzcxNjA4NDN9.F2RdGyNM7N2NS1KoifILziPvF3yoW-WqlSzwgV-HRqA'
 #使用代理访问待转换md文档里的图床，不用的话请修改为False
 #使用代理访问待转换md文档里的图床，需要改端口请自行修改
-proxy=True
+proxy=False
 proxies = {'http': "http://127.0.0.1:7890",
            'https': "https://127.0.0.1:7890"}
 
